@@ -1,0 +1,13 @@
+#add the workflow name
+name: first action
+#when this workflow should run, then you define the Events should trigger this workflow
+on: workflow_dispatch  # this event is make sure that the user run the WF (manual)
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greeting
+        run: echo "Hellow World"
+
+      - name: print goodbye
+        run: echo "Done - bye!"
