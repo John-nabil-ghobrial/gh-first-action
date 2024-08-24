@@ -8,6 +8,15 @@ jobs:
     steps:
       - name: print greeting
         run: echo "Hellow World"
-
       - name: print goodbye
         run: echo "Done - bye!"
+
+
+##run run multiple shell commands
+  secound-johb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: multi shell commands
+        run: |
+            echo "First output"
+            echo "Second output"
